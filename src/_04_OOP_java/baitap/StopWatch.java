@@ -10,7 +10,7 @@ public class StopWatch {
     private Date startTime;
     private Date endTime;
 
-    public StopWatch() {
+    public StopWatch() {    
         startTime = new Date();
     }
 
