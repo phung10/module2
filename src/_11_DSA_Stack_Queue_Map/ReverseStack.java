@@ -1,4 +1,4 @@
-package _10_DSA_Stack_Queue_Map;
+package _11_DSA_Stack_Queue_Map;
 
 import java.util.Arrays;
 import java.util.Stack;
