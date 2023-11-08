@@ -6,10 +6,11 @@ import java.util.List;
 public class ProductManager {
     static List<Product> products = new ArrayList<>();
     static {
-        products.add(new Product(1,"sp1",100));
-        products.add(new Product(2,"sp2",10000));
-        products.add(new Product(3,"sp3",500));
-        products.add(new Product(4,"sp4",199));
+        products.add(new Product(1,"iphone",20000));
+        products.add(new Product(2,"xiaomi",10000));
+        products.add(new Product(3,"samsung",15000));
+        products.add(new Product(4,"oppo",800000));
+        products.add(new Product(5,"Bphone",9999999));
     }
     public void addProduct(Product product){
         products.add(product);
