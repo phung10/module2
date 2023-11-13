@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class BinarySearchRecursive {
     private static int binarySearch(int[] array, int left, int right, int value) {
-        if (left < right) {
+        if (left <= right) {
             int middle = (left + right) / 2;
             if (array[middle] == value) {
                 return middle;
@@ -15,26 +15,24 @@ public class BinarySearchRecursive {
                 return binarySearch(array, left, middle - 1, value);
             }
         }
-        return -1;
+       return -1;
     }
 
     public static void main(String[] args) {
-
-        //int[] a={2,8,10,25,57,60,75,90,100};
 
         Scanner sc = new Scanner(System.in);
         System.out.printf("nhap so luong mang ");
         int size = sc.nextInt();
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
-            System.out.println("nhap phan tu so " + i);
+            System.out.println("nhap phan tu so " + (i+1));
             arr[i] = sc.nextInt();
         }
         Arrays.sort(arr);
         System.out.println("mang khi duoc sap xep la" + Arrays.toString(arr));
         System.out.printf("nhap gia tri can tim ");
         int value = sc.nextInt();
-        int index = binarySearch(arr, 0, arr.length - 1, value);
+        int index = binarySearch(arr, 0, size - 1, value);
 
         if (index != -1) {
             System.out.printf("gia tri duoc tim thay tai vi tri " + index);
@@ -45,7 +43,7 @@ public class BinarySearchRecursive {
                int value1 = ss.nextInt();
                 index = binarySearch(arr, 0, arr.length - 1, value1);
                 if (index != -1) {
-                    System.out.printf("gia tri duoc ti  m thay bkjadbmcavi tri " + index);
+                    System.out.printf("gia tri duoc tim thay tai vi tri " + index);
                 }
             }
 
