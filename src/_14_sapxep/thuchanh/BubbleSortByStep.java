@@ -33,7 +33,7 @@ public class BubbleSortByStep {
                     list[i + 1] = temp;
 
                     needNextPass = true; /* Next pass still needed */
-                }
+                }   
             }
             /* Array may be sorted and next pass not needed */
             if (needNextPass == false) {
